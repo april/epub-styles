@@ -1,0 +1,12 @@
+.dropcap {
+  float: left;
+  font-family: "ABeeZee", sans;
+  font-style: normal;
+  font-size: 3em;
+  height: 1.1em;
+  line-height: 1.0em;
+  overflow: hidden;
+  margin-bottom: -0, 6em;
+  margin-right: 0.1em;
+  margin-top: -0.11em;
+}

@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Noto Emoji";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  src: url(NotoEmoji-Regular.ttf);
+}
+
+.emoji {
+  font-family:
+    /* system fonts first, for modern color devices */
+    "Apple Color Emoji",
+    "Noto Color Emoji",    
+    "Segoe UI Emoji",
+    "SamsungOne",
+    
+    /* bundled into the epub for ebook readers */
+    "Noto Emoji",
+
+    /* shrugs */
+    sans-serif;
+}

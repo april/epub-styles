@@ -1,0 +1,8 @@
+@font-face {
+  src: url(Change this to the relative path to: Redacted-Regular.ttf);
+  font-family: "Redacted";
+}
+
+.redacted {
+  font-family: "Redacted", serif;
+}

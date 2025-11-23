@@ -1,6 +1,6 @@
 @font-face {
-  src: url(Redacted-Regular.ttf);
   font-family: "Redacted";
+  src: url(Redacted-Regular.ttf);
 }
 
 .redacted {

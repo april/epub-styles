@@ -1,0 +1,13 @@
+.blockquote {
+  border-left: solid 2px currentColor;
+  font-style: italic;
+  margin-left: 1.25em;
+  margin-right: 1.25em;
+  padding-left: .75em;
+}
+
+.blockquote .attribution {
+  font-style: normal;
+  margin-right: 1.25em;
+  text-align: right;
+}

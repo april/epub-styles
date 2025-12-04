@@ -3,6 +3,23 @@
   <head>
     <title>Blockquote</title>
     <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <style>
+      .blockquote {
+        border-left: solid 2px currentColor;
+        font-style: italic;
+        margin-left: 1.25em;
+        margin-right: 1.25em;
+        padding-left: .75em;
+      }
+      .blockquote p:last-of-type {
+        margin-bottom: 0;
+      }
+      .blockquote .attribution {
+        font-style: normal;
+        margin-right: 1.25em;
+        text-align: right;
+      }
+    </style>
   </head>
   <body>
     <h1>Blockquote</h1>
@@ -11,9 +28,8 @@
     <p>Sometimes you want a little more pizazz though, don't you?</p>
     <div class="blockquote">
       <p>This is a blockquote with a vertical line on the left side. For many people, it helps distinguish it from an indented paragraph.</p>
-      <p>Of course, you can style it however you want, even make it the default style for all blockquotes if you're so inclined. The world is your oyster!
-        <div class="attribution">—Anatole France</div>
-      </p>
+      <p>Of course, you can style it however you want, even make it the default style for all blockquotes if you're so inclined. The world is your oyster!</p>
+      <div class="attribution">—Anatole France</div>
     </div>
   </body>
 </html>

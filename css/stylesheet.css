@@ -1,7 +1,4 @@
-/* Use this style like so:
-<p>This renders so well on ebook readers! <span style="emoji">😍</span></p>
-*/
-
+/* styles used across multiple samples */
 @font-face {
   font-family: "Noto Emoji";
   font-stretch: normal;
@@ -16,10 +13,10 @@
   font-family:
     /* system fonts first, for modern color devices */
     "Apple Color Emoji",
-    "Noto Color Emoji",    
+    "Noto Color Emoji",
     "Segoe UI Emoji",
     "SamsungOne",
-    
+
     /* bundled into the epub for ebook readers */
     "Noto Emoji",
 

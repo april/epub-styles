@@ -22,14 +22,27 @@
           /* bundled into the epub for ebook readers */
           "Noto Emoji",
           /* shrugs */
-          sans-serif;
+          serif;
       }
+
+      /* the Kindle app on Android seems to have difficulty with the color fonts.
+         as such, we can't use color emoji for Kindle on any platform */
+      @media amzn-kf8 {
+        .emoji {
+          font-family:
+            /* bundled into the epub for ebook readers */
+            "Noto Emoji",
+            /* shrugs */
+            serif;
+        }
+      }
+
   </style>
   </head>
   <body>
     <h1>Emoji</h1>
     <p>This page demonstrates the use of emoji. <span class="emoji">🤩</span></p>
     <p>All emoji are surrounded by <code>&lt;span class="emoji"&gt;</code><span class="emoji">🤓</span><code>&lt;/span&gt;</code>.</p>
-    <p>This will use the default system font on operating systems that support them (e.g. iOS / Android <span class="emoji">📲</span> and macOS / Windows <span class="emoji">💻</span>), and fall back to <a href="https://fonts.google.com/noto/specimen/Noto+Emoji">Noto Emoji</a> on systems that don't <span class="emoji">🛑</span>, like most hardware ebook readers. <span class="emoji">🌈</span></p>
+    <p>This will use the default system font on operating systems that support them (e.g. iOS / Android <span class="emoji">📲</span> and macOS / Windows <span class="emoji">💻</span>). On systems that don't, such as hardware ebook readers and the Kindle app (Android) <span class="emoji">🛑</span>, it will fall back to <a href="https://fonts.google.com/noto/specimen/Noto+Emoji">Noto Emoji</a>. <span class="emoji">🌈</span></p>
   </body>
 </html>

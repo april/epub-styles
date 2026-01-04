@@ -1,15 +1,17 @@
-<?xml version='1.0' encoding='utf-8'?>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-  <head>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en">
+<head>
     <title>Scene Transition</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
     <style>
       @font-face {
-        src: url(Separator.ttf);
         font-family: "Separator";
         font-stretch: normal;
         font-style: normal;
         font-weight: normal;
+        src: url(Separator.ttf);
       }
 
       div.scene-divider {
@@ -30,10 +32,10 @@
   <body>
     <h1>Scene Transition</h1>
     <p>This page demonstrates some of the ways you can divide a scene.</p>
-    <hr class="scene-divider" />
+    <hr class="scene-divider"/>
     <p>The first, and probably the most common way, is a happy little horizontal line.  Ideally you would use a three-em dash, aka <code>&amp;#x2E3B;</code>, but most fonts don’t support that character. Instead, we use a <code>&lt;hr&gt;</code> that is 10% of the page width.</p>
     <div class="scene-divider">—</div>
     <p>Of course, that doesn't mean you can’t get fancy with things. If you’re an up-and-coming publisher who wants to make a sp—lash, why not create your very own custom divider set as the background image to a <code>&lt;div&gt;</code> instead?</p>
     <p>Note that the Kindle doesn't support CSS color mode selection, so you have to get extremely hacky by making your separator into a font (see <code>svg2font.py</code>) and then using an em dash as your text.</p>
-  </body>
+</body>
 </html>

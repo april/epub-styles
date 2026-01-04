@@ -1,12 +1,15 @@
-<?xml version='1.0' encoding='utf-8'?>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-  <head>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns:epub="http://www.idpf.org/2007/ops">
+<head>
     <title>Dropcap</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
     <style>
-      /* rip first-letter
+      /* rip ::first-letter, which doesn't work on certain devices
       p.dropcap::first-letter {
       */
+
       p.dropcap {
         margin-top: 0;
         text-indent: 0;
@@ -27,5 +30,5 @@
     <h1>Dropcap</h1>
     <p class="dropcap"><span class="dropcap">T</span>his page demonstrates the use of drop caps, also known as an <b>initial</b>. In a written or published work, an <b>initial</b> is a letter at the beginning of a word, a chapter, or a paragraph that is larger than the rest of the text. The word is derived from the Latin “<i>initiālis,</i>” which means <i>of the beginning.</i></p>
     <p>Ideally this solution would use the CSS selector <code>::first-letter</code>, but unfortunately this is not supported by Play Books. As such, the first letter of the paragraph of first paragraph of each chapter must be wrapped in a <code>&lt;span&gt;</code>.</p>
-  </body>
+</body>
 </html>

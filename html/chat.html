@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Chat</title>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+  <style>
+
+  .discord-container {
+    border-collapse: separate;
+    border-spacing: 0;
+    display: table;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+    background-color: #36393f; /* Dark Grey Background */
+    color: white;            /* Light Grey Text */
+    border-radius: 5px;
+    margin: -.5em 0;
+    /* Ensures the background covers all floated children */
+    overflow: hidden;
+    width: 100%;    
+  }
+
+  .discord-message-row {
+    display: table-row;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .discord-avatar-col {
+    border-right: 0;
+    display: table-cell;
+    max-width: 3.5em;
+    width: 3.5em;
+  }
+  
+  .discord-avatar {
+    border-radius: 50%; /* transparent PNGs flatten weird on play books */
+    margin-top: .3em;
+    width: 3.5em;
+  }
+
+  @media amzn-kf8 {
+    .discord-avatar-col {
+      max-width: 10%;
+      text-align: right;
+      width: 10%;
+    }
+    .discord-avatar {
+      border-radius: none;
+      margin-right: -.75em;
+      width: 100%;
+    }
+  }
+  
+  .discord-content {
+    border-bottom: solid 1em transparent;
+    display: table-cell;
+    padding: 0 1em 0 .5em;
+    vertical-align: top;
+  }
+
+  .discord-message-row:last-child .discord-content {
+    border-bottom: none;
+  }
+
+  .discord-header {
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+
+.discord-username {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.discord-timestamp {
+    /* color: #99aab5; */
+    color: #dcddde;
+    font-size: 0.75em;
+    margin-left: 6px;
+}
+    
+.discord-message {
+  line-height: 1;
+  margin: 0;
+}
+.discord-message + .discord-message {
+  margin-top: .5em;
+}
+</style>
+
+</head>
+<body>
+<h1>Chat</h1>
+<p>Stories set in the modern era often want to show characters participating in a group chat.</p>
+    <div class="discord-container">
+<!--
+        <div class="discord-channel-header">
+            <div class="discord-hash-icon">#</div>
+            <div class="discord-header-text">
+                <div class="discord-channel-name">conspiracy-theories</div>
+                <div class="discord-online-status">
+                    <span class="discord-dot"></span> 5 Online
+                </div>
+            </div>
+        </div> -->
+      <div class="discord-message-row">
+        <div class="discord-avatar-col">
+          <img src="penelopede.png" alt="Penelope Moore" class="discord-avatar"/>
+        </div>
+        <div class="discord-content">
+          <div class="discord-header">
+            <span class="discord-username">penny “epub sux” moore</span>
+            <span class="discord-timestamp">Yesterday at 10:13 PM</span>
+          </div>
+          <p class="discord-message">
+            This is a sample of a Discord-style chat system.
+          </p>
+          <p class="discord-message">
+            The primary issue with developing something like this is how awful the EPUB standard is. You would think it would be prescriptive but it isn’t—the features that are supported by various readers are all over the place. It’s a miracle that anything works at all.
+          </p>
+        </div>
+      </div>
+
+      <div class="discord-message-row">
+        <div class="discord-avatar-col">
+          <img src="katarina.png" alt="Antithesis Kate" class="discord-avatar"/>
+        </div>
+        <div class="discord-content">
+          <div class="discord-header">
+            <span class="discord-username">Katarina</span>
+            <span class="discord-timestamp">6:42 AM</span>
+          </div>
+          <p class="discord-message">
+            Standard is a very generous term for it. <span class="emoji">🫠</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="discord-message-row">
+        <div class="discord-avatar-col">
+          <img src="alyssa.png" alt="Alyssa Greeley" class="discord-avatar"/>
+        </div>
+        <div class="discord-content">
+          <div class="discord-header">
+            <span class="discord-username">Alyssa Greeley</span>
+            <span class="discord-timestamp">10:05 AM</span>
+          </div>
+          <p class="discord-message">
+            Especially on the Kindle, which doesn't support Flexbox or CSS Grid or basically anything newer than 2002.
+          </p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

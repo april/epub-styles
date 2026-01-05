@@ -15,4 +15,4 @@ April's handy collection of EPUB styles that work consistently across software a
 🛑 means that it either won't work, or, for rando software, that might not work
 
 1. Avatars don't show with transparent backgrounds on black-and-white hardware Kindles
-2. Doesn't support color backgrounds
+2. Doesn't support background colors when in dark mode

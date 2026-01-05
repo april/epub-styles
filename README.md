@@ -11,7 +11,7 @@ April's handy collection of EPUB styles that work consistently across software a
 | Scene Transition | ✅ | ✅ |   | ✅ | ⚠️ |
 | Text Messages | ✅ | &nbsp;&nbsp;✅<sup>2</sup> |   | &nbsp;&nbsp;✅<sup>2</sup> | 🛑 |
 
-⚠️ means that it will work, but it may not be beautiful
+⚠️ means that it will work, but it may not be beautiful<br>
 🛑 means that it either won't work, or, for rando software, that might not work
 
 1. Avatars don't show with transparent backgrounds on black-and-white hardware Kindles

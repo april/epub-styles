@@ -16,16 +16,16 @@
         clear: both;
         margin-bottom: 3px;
         width: 100%;
-            /* don't break a message across multiple pages */
+        /* don't break a message across multiple pages */
         break-inside: avoid;
         page-break-inside: avoid;
         -webkit-column-break-inside: avoid;
       }
       .message-them-row {
-          text-align: left;
+        text-align: left;
       }
       .message-me-row {
-          text-align: right;
+        text-align: right;
       }
       /* messages from different people have a taller spacing */
       .message-me-row + .message-them-row,
@@ -49,23 +49,29 @@
       }
       .message-me {
         background-color: #033e80;
-        color: #ffffff !important; /* Use !important to force color on Kindle */
+        color: #ffffff !important;
         border-bottom-right-radius: 4px;
         margin-left: 20%; 
-      }
-      .message-me-name, .message-them-name {
-        color: white;
-        font-size: 0.9rem;
-        font-weight: bold;
-        margin: 0 0 3px 0;
-        padding: 0 12px;
       }
       .message-me-name {
         text-align: right;
       }
+	    .message-me-name,
+	    .message-them-name {
+        color: #8e8e93;
+        font-weight: normal;
+        font-size: .8rem;
+        margin: 0 0 3px 0;
+        padding: 0 12px;
+        text-transform: uppercase;
+      }
+     .imessage .message-me-name, .imessage .message-them-name {
+        font-size: .85rem;
+        text-transform: none;
+      }
       .message-read-receipt, .message-timestamp {
         color: #8e8e93;
-        font-size: 12px;
+        font-size: .75rem;
       }
       .message-read-receipt {
         text-align: right;
@@ -82,22 +88,24 @@
     <p>Text messages are a surprisingly common part of modern fiction, and have dozens of ways to format them. And yet, most of them are entirely unreadable.</p>
 
     <p>This style features a bunch of unique features, including:
-      <ul>
+      </p>
+<ul>
         <li>optional sender and recipient names</li>
         <li>consecutive messages from the same person are closer together than messages from alternating people</li>
         <li>full color on devices that can support it</li>
         <li>messages that won't render partially on one page and partially on another</li>
       </ul>
-    </p>
+    <p></p>
 
-    <p style="page-break-after: always;">Turn to the next page to see what it looks like.</p>
-    <h1>Text Messages</h1>
+    <p>Turn to the next page to see what it looks like.</p>
 
-    <div class="message-container">
+    <h1 style="break-before: page; page-break-before: always;">Text Messages (iMessage)</h1>
+
+   <div class="message-container imessage">
       <div class="message-timestamp"><b>Yesterday</b> 11:42 PM</div>
  
         <div class="message-them-row">
-          <div class="message-them-name">Alyson</div>
+          <div class="message-them-name">Alyssa Greeley</div>
           <div class="message-them">
               Hey, you there?
           </div>
@@ -106,7 +114,7 @@
       <div class="message-timestamp"><b>Today</b> 6:43 AM</div>
 
       <div class="message-me-row">
-        <div class="message-me-name">Penelope</div>
+        <div class="message-me-name">Penelope Moore</div>
         <div class="message-me">
             sorry, was sleeping!
         </div>
@@ -132,22 +140,66 @@
 
       <div class="message-them-row">
         <div class="message-them">
-          Because I’m writing the penultimate text message of this sample and it's so long that it wraps over multiple lines.
-        </div>
-      </div>
-
-      <div class="message-them-row">
-        <div class="message-them">
-          Although now that I think about it, maybe another message would be a good idea? Something that really delves into the inner thoughts and feelings of the person who wrote it?
+          Because I've created a text messaging style that looks like iMessage, complete with timestamps, names, bubbles, and read receipts.
         </div>
       </div>
 
       <div class="message-me-row">
         <div class="message-me">
-          i’m happy for you. or sorry that happened.
+          and wow, it even renders on kindle!
         </div>
       </div>
-      <div class="message-read-receipt"><b>Read</b> 6:47 AM</div>
+	  <div class="message-read-receipt"><b>Read</b> 6:47 AM</div>
     </div>
+
+    <h1 style="break-before: page; page-break-before: always;">Text Messages (Standard)</h1>
+    <div class="message-container"> 
+        <div class="message-them-row">
+          <div class="message-them-name">Alyson — 11:42PM</div>
+          <div class="message-them">
+              Hey, you there?
+          </div>
+        </div>
+
+      <div class="message-me-row">
+        <div class="message-me-name">Penelope — 6:43AM</div>
+        <div class="message-me">
+            sorry, was sleeping!
+        </div>
+      </div>
+
+      <div class="message-me-row">
+        <div class="message-me">
+            what's up?
+        </div>
+      </div>
+      
+      <div class="message-me-row">
+        <div class="message-me">
+            everything okay?
+        </div>
+      </div>
+
+      <div class="message-them-row">
+        <div class="message-them-name">Alyson — 6:44PM</div>
+        <div class="message-them">
+            Yeah, I’m positively chuffed.
+        </div>
+      </div>
+
+      <div class="message-them-row">
+        <div class="message-them">
+          This message style is commonly seen in ebooks, as it continually has timestamps for when messages span multiple pages.
+        </div>
+      </div>
+
+      <div class="message-me-row">
+        <div class="message-them-name">Penelope — 6:47PM</div>
+        <div class="message-me">
+          and wow, it even renders on kindle!
+        </div>
+      </div>
+    </div>
+
 </body>
 </html>
